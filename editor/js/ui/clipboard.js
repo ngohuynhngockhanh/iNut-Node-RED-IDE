@@ -50,7 +50,7 @@ RED.clipboard = (function() {
             .dialog({
                 modal: true,
                 autoOpen: false,
-                width: 500,
+                width: 900,
                 resizable: false,
                 buttons: [
                     {
@@ -139,7 +139,7 @@ RED.clipboard = (function() {
             '</div>';
 
         inutDialog = '<div class="form-row">'+
-            '<div class="palette-editor-tab hide" style="display: block; height: 550px;">' +
+            '<div class="palette-editor-tab hide" style="display: block; height: 500px;">' +
                '<div class="palette-search">'+
                   '<div class="red-ui-searchBox-container"><i class="fa fa-search"></i><input class="inut-search" type="text" data-i18n="[placeholder]inut.search"><a href="#" style="display: none;"><i class="fa fa-times"></i></a><span class="red-ui-searchBox-resultCount hide" style="display: inline;">0</span></div>'+
                '</div>'+
