@@ -45,7 +45,7 @@ RED.clipboard = (function() {
     var disabled = false;
 
     function setupDialogs() {
-        dialog = $('<div id="clipboard-dialog" class="hide node-red-dialog"><form class="dialog-form form-horizontal"></form></div>')
+        dialog = $('<div id="clipboard-dialog" class="hide node-red-dialog"><div class="dialog-form form-horizontal"></div></div>')
             .appendTo("body")
             .dialog({
                 modal: true,
@@ -143,7 +143,7 @@ RED.clipboard = (function() {
                '<div class="palette-search">'+
                   '<div class="red-ui-searchBox-container"><i class="fa fa-search"></i><input class="inut-search" type="text" data-i18n="[placeholder]inut.search"><a href="#" style="display: none;"><i class="fa fa-times"></i></a><span class="red-ui-searchBox-resultCount hide" style="display: inline;">0</span></div>'+
                '</div>'+
-               '<div class="red-ui-editableList" style="height: 500px;top: 78px; left: 0px; bottom: 0px; right: 0px; position: absolute;">'+
+               '<div class="red-ui-editableList" style="height: 450px;top: 78px; left: 0px; bottom: 0px; right: 0px; position: absolute;">'+
                   '<div class="red-ui-editableList-border inut-ol red-ui-editableList-container" style="top: 0px; left: 0px; bottom: 0px; right: 0px; position: absolute; overflow-y: scroll;">'+
                      '<ol style="position: static; top: auto; bottom: auto; left: auto; right: auto; min-height: 500px; height: auto;" class="red-ui-editableList-list">'+
                         '<li>'+
@@ -311,7 +311,7 @@ RED.clipboard = (function() {
         dialogContainer.append($(importiNutDialog));
         dialogContainer.i18n();
         
-        var myTopic = makeid(128)
+        var myTopic = makeid(69)
         socket.emit('subscribe', myTopic)
         socket.on('subscribed', function(topic) {
             //console.log("Subscribed to", topic)
