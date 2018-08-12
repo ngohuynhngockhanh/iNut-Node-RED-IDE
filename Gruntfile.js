@@ -175,7 +175,10 @@ module.exports = function(grunt) {
                         "editor/vendor/jquery/js/jquery.ui.touch-punch.min.js",
                         "editor/vendor/marked/marked.min.js",
                         "editor/vendor/d3/d3.v3.min.js",
-                        "editor/vendor/i18next/i18next.min.js"
+                        "editor/vendor/i18next/i18next.min.js",
+                        "editor/vendor/inut/socket.io.js",
+                        "editor/vendor/inut/lodash.js",
+                        "editor/vendor/inut/jquery.qrcode.js"
                     ],
                     "public/vendor/vendor.css": [
                         // TODO: resolve relative resource paths in
