@@ -143,6 +143,6 @@
     "webdriverio": "^4.9.11"
   },
   "engines": {
-    "node": ">=4"
+    "node": "=8"
   }
 }
