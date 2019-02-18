@@ -19,6 +19,11 @@
 //var fs = require("fs");
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"; 
 module.exports = {
+    editorTheme: {
+       projects: {
+           enabled: true
+       }
+    },
     // the tcp port that the Node-RED web server is listening on
     uiPort: process.env.PORT || 1880,
 
